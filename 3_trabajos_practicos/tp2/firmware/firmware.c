@@ -5,7 +5,9 @@
 #include "task.h"
 #include "queue.h"
 
-// Declaración de la cola para enviar temperatura desde una tarea a otra
+// Declaración de la cola para enviar las temperatura desde una tarea a otra
+// La cola se usará para enviar valores de tipo float (temperatura en grados Celsius)
+// QueueHandle_t es un tipo definido en FreeRTOS para manejar colas.
 QueueHandle_t temperatura_queue;
 
 /**
